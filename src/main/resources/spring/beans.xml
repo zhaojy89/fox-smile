@@ -18,7 +18,6 @@
     -->
 
     <!--原配置文件包扫描方式, 自动扫描@Controller，@Service, @Repository, @Component注解的bean,自动注入容器中-->
-    <!--
-    <context:component-scan base-package="com.fox.smile.spring.annotation"></context:component-scan>
-    -->
+    <!--use-default-filters 配置为false时,只包含才能生效-->
+    <!--<context:component-scan base-package="com.fox.smile.spring.annotation" use-default-filters="false"></context:component-scan>-->
 </beans>
