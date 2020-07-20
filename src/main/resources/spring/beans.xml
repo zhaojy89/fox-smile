@@ -4,7 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--通过配置文件配置bean方式-->
+    <!--配置文件配置bean方式-->
     <!--
     <bean id="person" class="com.fox.smile.spring.annotation.bean.Person">
         <constructor-arg name="name" value="bill"/>
@@ -17,7 +17,7 @@
     </bean>
     -->
 
-    <!--原配置文件包扫描方式, 自动扫描@Controller，@Service, @Repository, @Component注解的bean,自动注入容器中-->
+    <!--配置文件包扫描方式, 自动扫描@Controller，@Service, @Repository, @Component注解的bean,自动注入容器中-->
     <!--use-default-filters 配置为false时,只包含才能生效-->
     <!--<context:component-scan base-package="com.fox.smile.spring.annotation" use-default-filters="false"></context:component-scan>-->
 </beans>
