@@ -1,10 +1,9 @@
 package com.fox.smile.spring.annotation;
 
 import com.fox.smile.spring.annotation.bean.Person;
-import com.fox.smile.spring.annotation.config.MainConfig;
+import com.fox.smile.spring.annotation.config.MainConfigScan;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainTest {
 
@@ -20,7 +19,7 @@ public class MainTest {
          */
 
         //通过注解方式注入bean
-        ApplicationContext annotationApplicationContext = new AnnotationConfigApplicationContext(MainConfig.class);
+        ApplicationContext annotationApplicationContext = new AnnotationConfigApplicationContext(MainConfigScan.class);
         Person person2 = annotationApplicationContext.getBean(Person.class);
         System.out.println("person2=>"+person2);
 
@@ -29,5 +28,6 @@ public class MainTest {
             System.out.println("beanName=>"+beanName);
         }
     }
+
 
 }

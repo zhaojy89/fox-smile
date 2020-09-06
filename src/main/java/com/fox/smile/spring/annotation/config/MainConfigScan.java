@@ -37,7 +37,7 @@ import org.springframework.stereotype.Service;
 // FilterType.ASPECTJ  ASPECTJ表达式，不常用
 // FilterType.REGEX 正则表达式，不常用
 // FilterType.CUSTOM 自定义方式
-public class MainConfig {
+public class MainConfigScan {
 
     @Bean(value = "person") //给容器注册一个bean; bean类型为返回值类型，beanName为方法名; bean注解指定了名称，则优先使用注解配置的bean名称
     public Person person01(){
